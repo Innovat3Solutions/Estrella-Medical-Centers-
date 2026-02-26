@@ -3,6 +3,126 @@
 
 @theme {
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  /* Primary Blue Palette */
+  --color-brand-primary: #13386c;
+  /* Dark Blue */
+  --color-brand-primary-light: #4d95bf;
+  /* Cyan / Light Blue */
+  --color-brand-primary-lighter: #7eb8d8;
+  /* Lighter Cyan */
+  --color-brand-primary-dark: #13135a;
+  /* Navy */
+  --color-brand-primary-darker: #0a1f3d;
+  /* Deeper Navy */
+  /* Secondary Orange Palette */
+  --color-brand-secondary: #fb7f36;
+  /* Orange/Tangerine */
+  --color-brand-secondary-light: #ffa366;
+  /* Light Orange */
+  --color-brand-secondary-dark: #e56820;
+  /* Dark Orange */
+  /* Accent Yellow */
+  --color-brand-accent: #fce945;
+  /* Yellow */
+  --color-brand-accent-light: #fff176;
+  /* Light Yellow */
+  /* Utility Colors */
+  --color-brand-light: #fff2eb;
+  /* Very Light Orange Tint */
+  --color-brand-muted: #f8fafc;
+  /* Slate 50 */
+  --color-brand-cyan-tint: #e8f4f8;
+  /* Light Cyan Background */
+}
+
+/* Gradient Utility Classes */
+.gradient-blue {
+  background: linear-gradient(135deg, var(--color-brand-primary-light) 0%, var(--color-brand-primary) 50%, var(--color-brand-primary-dark) 100%);
+}
+
+.gradient-blue-soft {
+  background: linear-gradient(180deg, var(--color-brand-primary-lighter) 0%, var(--color-brand-primary) 100%);
+}
+
+.gradient-blue-horizontal {
+  background: linear-gradient(90deg, var(--color-brand-primary-light) 0%, var(--color-brand-primary-dark) 100%);
+}
+
+.gradient-orange {
+  background: linear-gradient(135deg, var(--color-brand-accent) 0%, var(--color-brand-secondary) 50%, var(--color-brand-secondary-dark) 100%);
+}
+
+.gradient-yellow-orange {
+  background: linear-gradient(135deg, var(--color-brand-accent) 0%, var(--color-brand-secondary-light) 50%, var(--color-brand-secondary) 100%);
+}
+
+.gradient-yellow-orange-soft {
+  background: linear-gradient(180deg, var(--color-brand-accent-light) 0%, var(--color-brand-secondary) 100%);
+}
+
+.gradient-hero {
+  background: linear-gradient(135deg, var(--color-brand-cyan-tint) 0%, #f0f8f8 50%, var(--color-brand-light) 100%);
+}
+
+/* Text Gradient Utilities */
+.text-gradient-blue {
+  background: linear-gradient(135deg, var(--color-brand-primary-light) 0%, var(--color-brand-primary-dark) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.text-gradient-orange {
+  background: linear-gradient(135deg, var(--color-brand-accent) 0%, var(--color-brand-secondary) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.text-gradient-yellow-orange {
+  background: linear-gradient(135deg, var(--color-brand-accent) 0%, var(--color-brand-accent-light) 25%, var(--color-brand-secondary) 75%, var(--color-brand-secondary-dark) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Star Emboss Background Utility */
+.star-emboss {
+  position: relative;
+}
+
+.star-emboss::before {
+  content: '';
+  position: absolute;
+  background-image: url('/Assets/45.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: 0.03;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.star-emboss-left::before {
+  width: 400px;
+  height: 400px;
+  left: -100px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.star-emboss-right::before {
+  width: 500px;
+  height: 500px;
+  right: -150px;
+  top: 20%;
+}
+
+.star-emboss-center::before {
+  width: 600px;
+  height: 600px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
@@ -12,6 +132,8 @@
 
 /* Hide scrollbar for IE, Edge and Firefox */
 .hide-scrollbar {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
 }

@@ -1,110 +1,173 @@
+import { motion } from 'framer-motion';
+import { ShieldCheck, SmilePlus, Pill, Home, Clock } from 'lucide-react';
+import { useLanguage } from '../i18n';
+
+const containerVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.15
+    }
+  }
+};
+
+const itemVariants = {
+  hidden: { opacity: 0, y: 30 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.6, ease: "easeOut" }
+  }
+};
+
 export default function WhyChooseUs() {
+  const { t } = useLanguage();
+
   return (
-    <section className="py-24 px-6 md:px-12 lg:px-24 max-w-7xl mx-auto">
-      <div className="bg-[#f0f8f8] rounded-[3rem] p-8 md:p-16">
-        <div className="max-w-3xl mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-[#004b5c] mb-4 tracking-tight">
-            Why Choose <span className="text-[#4a9b9f]">Omnio Hospital?</span>
-          </h2>
-          <p className="text-[#64748b] leading-relaxed">
-            At Omnio Hospital, we blend expert medical care with compassion, offering personalized treatment to ensure every patient feels supported and valued throughout their healing journey.
-          </p>
+    <section className="py-12 sm:py-16 md:py-20 lg:py-24 px-4 sm:px-6 md:px-12 lg:px-16 xl:px-24 max-w-[1600px] mx-auto relative">
+      <div className="rounded-2xl sm:rounded-[2rem] md:rounded-[3rem] p-5 sm:p-6 md:p-10 lg:p-16 relative overflow-hidden shadow-sm border border-gray-100 gradient-hero">
+
+        {/* Star Emboss Background */}
+        <motion.img
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 0.05 }}
+          viewport={{ once: true }}
+          transition={{ duration: 1.5 }}
+          src="/Assets/45.png"
+          alt=""
+          className="absolute -top-20 -left-20 w-[450px] h-[450px] object-contain rotate-12 pointer-events-none"
+        />
+        <motion.img
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 0.04 }}
+          viewport={{ once: true }}
+          transition={{ duration: 1.5, delay: 0.3 }}
+          src="/Assets/45.png"
+          alt=""
+          className="absolute -bottom-32 -right-20 w-[500px] h-[500px] object-contain -rotate-6 pointer-events-none"
+        />
+
+        <div className="max-w-3xl mb-8 sm:mb-10 md:mb-12 relative z-10">
+          <motion.span
+            initial={{ opacity: 0, y: 10 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="inline-block px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-semibold mb-3 sm:mb-4 gradient-yellow-orange text-white"
+          >
+            {t.whyChooseUs.badge}
+          </motion.span>
+          <motion.h2
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-[var(--color-brand-primary)] mb-4 sm:mb-6 tracking-tight"
+          >
+            {t.whyChooseUs.title}{' '}
+            <span className="text-gradient-orange">{t.whyChooseUs.titleHighlight}</span>
+          </motion.h2>
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.1 }}
+            className="text-[#64748b] leading-relaxed text-sm sm:text-base md:text-lg"
+          >
+            {t.whyChooseUs.description}
+          </motion.p>
         </div>
 
         {/* Bento Grid Layout */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 auto-rows-[280px]">
-          {/* Card 1: Tall */}
-          <div className="col-span-1 lg:col-span-1 row-span-2 bg-[#004b5c] rounded-3xl overflow-hidden relative group flex flex-col">
-            <div className="p-8 relative z-10 flex-1">
-              <h3 className="text-2xl font-bold text-white mb-3">60+ Years of Excellence</h3>
-              <p className="text-white/80 text-sm leading-relaxed">
-                Decades of trusted care, prioritizing your health and well-being
-              </p>
-            </div>
-            <div className="relative h-1/2 w-full mt-auto">
-              <img
-                src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?q=80&w=2053&auto=format&fit=crop"
-                alt="Hospital Building"
-                className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                referrerPolicy="no-referrer"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none"></div>
-            </div>
-          </div>
-
-          {/* Card 2: Wide */}
-          <div className="col-span-1 md:col-span-2 lg:col-span-2 row-span-1 bg-[#004b5c] rounded-3xl overflow-hidden relative group flex">
-            <div className="p-8 relative z-10 w-1/2 flex flex-col justify-center">
-              <h3 className="text-2xl font-bold text-white mb-3">1000+ Expert Medical Care</h3>
-              <p className="text-white/80 text-sm leading-relaxed">
-                A team of professionals committed to your Health and well-being
-              </p>
-            </div>
-            <div className="relative w-1/2 h-full">
-              <img
-                src="https://images.unsplash.com/photo-1638202993928-7267aad84c31?q=80&w=2127&auto=format&fit=crop"
-                alt="Medical Team"
-                className="absolute inset-0 w-full h-full object-cover object-left transition-transform duration-500 group-hover:scale-105"
-                referrerPolicy="no-referrer"
-              />
-              <div className="absolute inset-0 bg-gradient-to-r from-[#004b5c] via-[#004b5c]/20 to-transparent pointer-events-none"></div>
-            </div>
-          </div>
-
-          {/* Card 3: Small */}
-          <div className="col-span-1 lg:col-span-1 row-span-1 bg-[#004b5c] rounded-3xl overflow-hidden relative group flex flex-col">
-            <div className="p-8 relative z-10 flex-1">
-              <h3 className="text-xl font-bold text-white mb-3">Advanced Medical Technology</h3>
-              <p className="text-white/80 text-sm leading-relaxed">
-                Medical technology for accurate diagnosis and effective treatment.
-              </p>
-            </div>
-            <div className="relative h-1/3 w-full mt-auto flex justify-end items-end p-4">
-              <div className="bg-white/10 backdrop-blur-sm p-3 rounded-2xl">
-                 {/* Placeholder for MRI icon/image */}
-                 <div className="w-12 h-12 bg-white/20 rounded-full"></div>
+        <motion.div
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-100px" }}
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4 sm:gap-5 md:gap-6 md:auto-rows-[260px] relative z-10"
+        >
+          {/* Card 1: Tall - 30+ Years */}
+          <motion.div variants={itemVariants} className="col-span-1 md:col-span-1 lg:col-span-2 md:row-span-2 rounded-2xl sm:rounded-3xl overflow-hidden relative group flex flex-col shadow-lg gradient-blue min-h-[280px] md:min-h-0">
+            <img src="/Assets/45.png" className="absolute -bottom-10 -right-10 w-40 sm:w-56 h-40 sm:h-56 opacity-10 object-contain group-hover:scale-110 transition-transform duration-700" alt="" />
+            <div className="p-5 sm:p-6 md:p-8 lg:p-10 relative z-10 flex-1">
+              <div className="bg-white/20 w-11 h-11 sm:w-14 sm:h-14 rounded-xl sm:rounded-2xl flex items-center justify-center mb-4 sm:mb-6 backdrop-blur-sm">
+                <ShieldCheck className="w-5 h-5 sm:w-7 sm:h-7 text-white" />
               </div>
-            </div>
-          </div>
-
-          {/* Card 4: Small */}
-          <div className="col-span-1 lg:col-span-1 row-span-1 bg-[#004b5c] rounded-3xl overflow-hidden relative group flex flex-col">
-            <div className="p-8 relative z-10 flex-1">
-              <h3 className="text-xl font-bold text-white mb-3">98% Happy Patients</h3>
-              <p className="text-white/80 text-sm leading-relaxed">
-                We take pride in creating a positive experience for every patient.
+              <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-white mb-2 sm:mb-4">{t.whyChooseUs.excellence.title}</h3>
+              <p className="text-white/80 text-sm sm:text-base leading-relaxed">
+                {t.whyChooseUs.excellence.desc}
               </p>
             </div>
-            <div className="relative h-1/2 w-full mt-auto">
-              <img
-                src="https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?q=80&w=2069&auto=format&fit=crop"
-                alt="Happy Patient"
-                className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                referrerPolicy="no-referrer"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#004b5c]/50 to-transparent pointer-events-none"></div>
+            <div className="relative h-32 sm:h-2/5 w-full mt-auto overflow-hidden">
+              <img src="/assets/images/premium/caregiver-delivering-nutritious-meal.png" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt="Caregiver" />
+              <div className="absolute inset-0 bg-gradient-to-t from-[var(--color-brand-primary)] to-transparent opacity-80 mix-blend-multiply"></div>
             </div>
-          </div>
+          </motion.div>
 
-          {/* Card 5: Wide */}
-          <div className="col-span-1 md:col-span-2 lg:col-span-2 row-span-1 bg-[#004b5c] rounded-3xl overflow-hidden relative group flex">
-             <div className="p-8 relative z-10 w-1/2 flex flex-col justify-center">
-              <h3 className="text-xl font-bold text-white mb-3">40+ Years Trusted Pharmacy</h3>
-              <p className="text-white/80 text-sm leading-relaxed">
-                We trusted pharmacy solutions, delivering quality care and reliability
+          {/* Card 2: Wide - 24hr Guarantee */}
+          <motion.div variants={itemVariants} className="col-span-1 md:col-span-2 lg:col-span-3 md:row-span-1 rounded-2xl sm:rounded-3xl overflow-hidden relative group flex shadow-lg gradient-yellow-orange min-h-[200px] md:min-h-0">
+            <img src="/Assets/45.png" className="absolute -top-20 right-10 w-48 sm:w-64 h-48 sm:h-64 opacity-10 object-contain group-hover:rotate-12 transition-transform duration-700" alt="" />
+            <div className="p-5 sm:p-6 md:p-8 lg:p-10 relative z-10 w-full lg:w-1/2 flex flex-col justify-center">
+              <div className="bg-white/20 w-10 h-10 sm:w-12 sm:h-12 rounded-xl sm:rounded-2xl flex items-center justify-center mb-3 sm:mb-4 backdrop-blur-sm">
+                <Clock className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
+              </div>
+              <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-white mb-2 sm:mb-3">{t.whyChooseUs.guarantee.title}</h3>
+              <p className="text-white/80 text-sm sm:text-base leading-relaxed">
+                {t.whyChooseUs.guarantee.desc}
               </p>
             </div>
-            <div className="relative w-1/2 h-full">
-              <img
-                src="https://images.unsplash.com/photo-1587854692152-cbe660dbde88?q=80&w=2069&auto=format&fit=crop"
-                alt="Pharmacy"
-                className="absolute inset-0 w-full h-full object-cover object-left transition-transform duration-500 group-hover:scale-105"
-                referrerPolicy="no-referrer"
-              />
-              <div className="absolute inset-0 bg-gradient-to-r from-[#004b5c] via-[#004b5c]/20 to-transparent pointer-events-none"></div>
+            <div className="relative hidden lg:block w-1/2 h-full overflow-hidden clip-diagonal-left">
+              <img src="/assets/images/premium/specialists.jpg" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt="Specialists" />
+              <div className="absolute inset-0 bg-gradient-to-r from-[var(--color-brand-secondary)] via-transparent to-transparent opacity-90 mix-blend-multiply"></div>
             </div>
-          </div>
-        </div>
+          </motion.div>
+
+          {/* Card 3: Small - Home Visits */}
+          <motion.div variants={itemVariants} className="col-span-1 md:col-span-1 lg:col-span-1 md:row-span-1 bg-white border border-gray-100 rounded-2xl sm:rounded-3xl overflow-hidden relative group flex flex-col shadow-lg">
+            <img src="/Assets/45.png" className="absolute -bottom-10 -right-10 w-28 sm:w-36 h-28 sm:h-36 opacity-5 object-contain" alt="" />
+            <div className="p-5 sm:p-6 lg:p-8 relative z-10 flex-1">
+              <div className="bg-[var(--color-brand-light)] w-10 h-10 sm:w-12 sm:h-12 rounded-lg sm:rounded-xl flex items-center justify-center mb-2 sm:mb-3">
+                <Home className="w-5 h-5 sm:w-6 sm:h-6 text-[var(--color-brand-primary)]" />
+              </div>
+              <h3 className="text-base sm:text-lg lg:text-xl font-bold text-[var(--color-brand-primary)] mb-1 sm:mb-2">{t.whyChooseUs.homeVisits.title}</h3>
+              <p className="text-[#64748b] text-xs sm:text-sm leading-relaxed">
+                {t.whyChooseUs.homeVisits.desc}
+              </p>
+            </div>
+          </motion.div>
+
+          {/* Card 4: Small - Bilingual Care */}
+          <motion.div variants={itemVariants} className="col-span-1 md:col-span-1 lg:col-span-2 md:row-span-1 bg-white border border-gray-100 rounded-2xl sm:rounded-3xl overflow-hidden relative group flex flex-col shadow-lg">
+            <img src="/Assets/45.png" className="absolute -bottom-10 -right-10 w-28 sm:w-36 h-28 sm:h-36 opacity-5 object-contain" alt="" />
+            <div className="p-5 sm:p-6 lg:p-8 relative z-10 flex-1">
+              <div className="bg-red-50 w-10 h-10 sm:w-12 sm:h-12 rounded-lg sm:rounded-xl flex items-center justify-center mb-2 sm:mb-3">
+                <SmilePlus className="w-5 h-5 sm:w-6 sm:h-6 text-[var(--color-brand-secondary)]" />
+              </div>
+              <h3 className="text-base sm:text-lg lg:text-xl font-bold text-[var(--color-brand-secondary)] mb-1 sm:mb-2">{t.whyChooseUs.bilingual.title}</h3>
+              <p className="text-[#64748b] text-xs sm:text-sm leading-relaxed">
+                {t.whyChooseUs.bilingual.desc}
+              </p>
+            </div>
+          </motion.div>
+
+          {/* Card 5: Wide - Integrated Services */}
+          <motion.div variants={itemVariants} className="col-span-1 md:col-span-2 lg:col-span-5 md:row-span-1 rounded-2xl sm:rounded-3xl overflow-hidden relative group flex shadow-lg gradient-blue min-h-[200px] md:min-h-0">
+            <img src="/Assets/45.png" className="absolute bottom-0 right-1/3 w-32 sm:w-40 h-32 sm:h-40 opacity-10 object-contain group-hover:-translate-y-4 transition-transform duration-700" alt="" />
+            <div className="p-5 sm:p-6 md:p-8 lg:p-10 relative z-10 w-full lg:w-2/5 flex flex-col justify-center">
+              <div className="bg-white/20 w-10 h-10 sm:w-12 sm:h-12 rounded-xl sm:rounded-2xl flex items-center justify-center mb-3 sm:mb-4 backdrop-blur-sm">
+                <Pill className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
+              </div>
+              <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-white mb-2 sm:mb-3">{t.whyChooseUs.integrated.title}</h3>
+              <p className="text-white/80 text-sm sm:text-base leading-relaxed max-w-md">
+                {t.whyChooseUs.integrated.desc}
+              </p>
+            </div>
+            <div className="relative hidden lg:block w-3/5 h-full overflow-hidden">
+              <img src="/assets/images/premium/service-pharmacy.jpeg" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt="Pharmacy" />
+              <div className="absolute inset-0 bg-gradient-to-l from-transparent to-[var(--color-brand-primary)] opacity-90 mix-blend-multiply"></div>
+            </div>
+          </motion.div>
+        </motion.div>
       </div>
     </section>
   );

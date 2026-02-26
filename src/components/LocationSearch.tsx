@@ -1,125 +1,212 @@
-import { Search, MapPin, Navigation, Phone } from 'lucide-react';
+import { useState } from 'react';
+import { MapPin, Navigation, Phone, Clock } from 'lucide-react';
+import { motion } from 'framer-motion';
+import { useLanguage } from '../i18n';
 
 const locations = [
   {
-    name: 'Omnio Central Hospital',
-    type: 'Main Hospital',
-    address: '123 Healthcare Ave, Medical District, NY 10001',
-    distance: '1.2 miles',
-    phone: '(555) 123-4567',
+    name: 'Estrella Medical Center - Flagler',
+    type: 'Miami-Dade Center',
+    address: '4795 W Flagler St, Miami, FL 33134',
+    phone: '(305) 982-8810',
+    hours: 'Mon-Fri: 7:30am-5pm | Sat: 8am-3pm',
+    comingSoon: false,
+    mapQuery: '4795+W+Flagler+St,+Miami,+FL+33134',
   },
   {
-    name: 'Omnio North Clinic',
-    type: 'Specialty Clinic',
-    address: '456 Wellness Blvd, Northside, NY 10002',
-    distance: '4.5 miles',
-    phone: '(555) 234-5678',
+    name: 'Estrella Medical Center - Kendall',
+    type: 'Miami-Dade Center',
+    address: '13980 SW 47th St, Miami, FL 33175',
+    phone: '(305) 982-8810',
+    hours: 'Mon-Fri: 7:30am-5pm | Sat: 8am-3pm',
+    comingSoon: false,
+    mapQuery: '13980+SW+47th+St,+Miami,+FL+33175',
   },
   {
-    name: 'Omnio Women\'s & Children\'s',
-    type: 'Specialized Care',
-    address: '789 Healing Way, South District, NY 10003',
-    distance: '7.8 miles',
-    phone: '(555) 345-6789',
+    name: 'Estrella Medical Center - Plantation',
+    type: 'Broward Center',
+    address: '1860 N Pine Island Rd, Plantation, FL 33322',
+    phone: '(305) 982-8810',
+    hours: 'Mon-Fri: 7:30am-5pm',
+    comingSoon: false,
+    mapQuery: '1860+N+Pine+Island+Rd,+Plantation,+FL+33322',
   },
   {
-    name: 'Omnio Urgent Care - West',
-    type: 'Urgent Care',
-    address: '321 Quick Care Ln, Westside, NY 10004',
-    distance: '9.1 miles',
-    phone: '(555) 456-7890',
+    name: 'Estrella Medical Center - Pembroke Pines',
+    type: 'Broward Center',
+    address: '1806 N Flamingo Rd Suite 280, Pembroke Pines, FL 33028',
+    phone: '(305) 982-8810',
+    hours: 'Mon-Fri: 7:30am-5pm',
+    comingSoon: false,
+    mapQuery: '1806+N+Flamingo+Rd,+Pembroke+Pines,+FL+33028',
+  },
+  {
+    name: 'Estrella Medical Center - Doral',
+    type: 'Miami-Dade Center',
+    address: '10305 NW 41st St Suite 227, Doral, FL 33178',
+    phone: '(305) 982-8810',
+    hours: 'Mon-Sat: 8am-4:30pm',
+    comingSoon: false,
+    mapQuery: '10305+NW+41st+St,+Doral,+FL+33178',
+  },
+  {
+    name: 'Estrella Medical Center - Hialeah',
+    type: 'Miami-Dade Center',
+    address: '4305 E 8th Ave, Hialeah, FL 33013',
+    phone: '(305) 982-8810',
+    hours: '',
+    comingSoon: true,
+    mapQuery: '4305+E+8th+Ave,+Hialeah,+FL+33013',
   },
 ];
 
 export default function LocationSearch() {
+  const { t } = useLanguage();
+  const [selectedLocation, setSelectedLocation] = useState(0);
+
+  const currentLocation = locations[selectedLocation];
+
+  // Map showing South Florida area
+  const mapSrc = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d229089.04006758948!2d-80.4137786!3d25.9017472!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b0a20ec8c111%3A0xff96f271ddad4f65!2sMiami%2C%20FL!5e0!3m2!1sen!2sus!4v1715456384724!5m2!1sen!2sus";
+
   return (
-    <section className="py-24 px-6 md:px-12 lg:px-24 max-w-7xl mx-auto flex flex-col lg:flex-row gap-16 items-center">
-      {/* Left Image Side */}
-      <div className="flex-1 relative rounded-3xl overflow-hidden shadow-2xl aspect-[4/5] lg:aspect-auto lg:h-[650px] w-full">
-        <img
-          src="https://images.unsplash.com/photo-1504439468489-c8920d786a2b?q=80&w=2071&auto=format&fit=crop"
-          alt="Modern hospital building exterior"
-          className="w-full h-full object-cover"
-          referrerPolicy="no-referrer"
-        />
-        {/* Gradient Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-t from-[#004b5c]/90 via-[#004b5c]/30 to-transparent"></div>
-        
-        {/* Text Overlay */}
-        <div className="absolute bottom-0 left-0 p-8 w-full">
-          <div className="bg-[#fdb913] w-12 h-1 mb-4 rounded-full"></div>
-          <h3 className="text-3xl font-bold text-white mb-3">
-            Always Close to Home
-          </h3>
-          <p className="text-white/90 text-sm font-medium leading-relaxed max-w-sm">
-            With multiple state-of-the-art facilities across the region, world-class healthcare is never far away.
-          </p>
+    <section id="locations" className="py-12 sm:py-16 md:py-20 lg:py-24 px-4 sm:px-6 md:px-12 lg:px-24 max-w-7xl mx-auto flex flex-col lg:flex-row gap-8 sm:gap-12 lg:gap-16 items-center relative overflow-hidden scroll-mt-20">
+      {/* Star Emboss Background */}
+      <motion.img
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 0.03 }}
+        viewport={{ once: true }}
+        transition={{ duration: 1.5 }}
+        src="/Assets/45.png"
+        alt=""
+        className="absolute -left-32 top-20 w-[400px] h-[400px] object-contain pointer-events-none -rotate-12"
+      />
+
+      {/* Left Map Side */}
+      <div className="flex-1 relative rounded-2xl sm:rounded-3xl overflow-hidden shadow-xl sm:shadow-2xl aspect-[4/3] sm:aspect-[4/4] lg:aspect-auto lg:h-[650px] w-full bg-gray-100">
+        <iframe
+          src={mapSrc}
+          width="100%"
+          height="100%"
+          style={{ border: 0 }}
+          allowFullScreen={true}
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+          title="Estrella Medical Centers Map"
+          className="absolute inset-0"
+        ></iframe>
+
+        {/* Map Overlay with Location Indicator */}
+        <div className="absolute bottom-2 sm:bottom-4 left-2 sm:left-4 right-2 sm:right-4 bg-white/95 backdrop-blur-sm rounded-xl sm:rounded-2xl p-3 sm:p-4 shadow-lg sm:shadow-xl">
+          <div className="flex items-center gap-2 sm:gap-3">
+            <div className="gradient-blue p-1.5 sm:p-2 rounded-lg sm:rounded-xl shrink-0">
+              <MapPin className="w-4 h-4 sm:w-5 sm:h-5 text-white" />
+            </div>
+            <div className="min-w-0">
+              <p className="font-bold text-[var(--color-brand-primary)] text-xs sm:text-sm truncate">{currentLocation.name}</p>
+              <p className="text-[10px] sm:text-xs text-[#64748b] truncate">{currentLocation.address}</p>
+            </div>
+          </div>
         </div>
       </div>
 
-      {/* Right Search Side */}
-      <div className="flex-1 w-full">
-        <h2 className="text-3xl md:text-4xl font-bold text-[#004b5c] mb-4 tracking-tight">
-          Find a Location Near You
-        </h2>
-        <p className="text-[#64748b] mb-8">
-          Search by city, zip code, or facility name to find the right care center for your needs.
-        </p>
-
-        {/* Search Bar */}
-        <div className="relative mb-8">
-          <input
-            type="text"
-            placeholder="Enter city, zip code, or facility..."
-            className="w-full pl-6 pr-14 py-4 rounded-full border border-gray-200 focus:outline-none focus:border-[#4a9b9f] focus:ring-1 focus:ring-[#4a9b9f] transition-all text-[#1e293b] placeholder-[#94a3b8] shadow-sm"
-          />
-          <button className="absolute right-2 top-1/2 -translate-y-1/2 bg-[#004b5c] hover:bg-[#003b48] text-white p-2.5 rounded-full transition-colors shadow-md">
-            <Search className="w-5 h-5" />
-          </button>
-        </div>
+      {/* Right Side - Locations */}
+      <div className="flex-1 w-full relative">
+        <motion.h2
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="text-2xl sm:text-3xl md:text-4xl font-bold text-[var(--color-brand-primary)] mb-3 sm:mb-4 tracking-tight"
+        >
+          {t.locationSearch.title}
+        </motion.h2>
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.1 }}
+          className="text-[#64748b] mb-6 sm:mb-8 text-sm sm:text-base"
+        >
+          {t.locationSearch.description}
+        </motion.p>
 
         {/* Locations List */}
-        <div className="space-y-4 max-h-[420px] overflow-y-auto pr-2 hide-scrollbar">
-          {locations.map((loc, index) => (
-            <div
-              key={index}
-              className="p-5 rounded-2xl border border-gray-100 bg-white hover:border-[#4a9b9f] hover:shadow-lg transition-all duration-300 group cursor-pointer"
-            >
-              <div className="flex justify-between items-start mb-2">
-                <div>
-                  <h4 className="font-bold text-[#1e293b] group-hover:text-[#004b5c] transition-colors text-lg">
-                    {loc.name}
-                  </h4>
-                  <p className="text-xs font-bold text-[#4a9b9f] mb-3 uppercase tracking-wider">
-                    {loc.type}
-                  </p>
-                </div>
-                <span className="bg-[#e6f4f1] text-[#004b5c] text-xs font-bold px-3 py-1.5 rounded-lg whitespace-nowrap">
-                  {loc.distance}
-                </span>
-              </div>
-              
-              <div className="space-y-2 mb-5">
-                <div className="flex items-start gap-3 text-[#64748b] text-sm">
-                  <MapPin className="w-4 h-4 mt-0.5 shrink-0 text-[#94a3b8]" />
-                  <p>{loc.address}</p>
-                </div>
-                <div className="flex items-center gap-3 text-[#64748b] text-sm">
-                  <Phone className="w-4 h-4 shrink-0 text-[#94a3b8]" />
-                  <p>{loc.phone}</p>
-                </div>
-              </div>
+        <div className="space-y-3 sm:space-y-4 max-h-[400px] sm:max-h-[480px] overflow-y-auto pr-1 sm:pr-2 hide-scrollbar">
+          {locations.map((loc, index) => {
+            const isSelected = selectedLocation === index;
 
-              <div className="flex gap-3">
-                <button className="flex-1 bg-gray-50 hover:bg-[#e6f4f1] text-[#004b5c] py-2.5 rounded-xl text-sm font-semibold transition-colors flex items-center justify-center gap-2 border border-gray-100 group-hover:border-[#e6f4f1]">
-                  <Navigation className="w-4 h-4" /> Directions
-                </button>
-                <button className="flex-1 bg-[#004b5c] hover:bg-[#003b48] text-white py-2.5 rounded-xl text-sm font-semibold transition-colors shadow-sm">
-                  Book Visit
-                </button>
-              </div>
-            </div>
-          ))}
+            return (
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.05 }}
+                key={index}
+                onClick={() => setSelectedLocation(index)}
+                className={`p-4 sm:p-5 rounded-xl sm:rounded-2xl border transition-all duration-300 group cursor-pointer ${
+                  loc.comingSoon
+                    ? 'border-dashed border-gray-300 opacity-75 bg-gray-50'
+                    : isSelected
+                    ? 'border-[var(--color-brand-primary)] bg-[var(--color-brand-light)] shadow-lg'
+                    : 'border-gray-100 bg-white hover:border-[var(--color-brand-secondary)] hover:shadow-md'
+                }`}
+              >
+                <div className="flex justify-between items-start gap-2 mb-2">
+                  <div className="min-w-0">
+                    <h4 className={`font-bold transition-colors text-base sm:text-lg ${
+                      isSelected ? 'text-[var(--color-brand-primary)]' : 'text-[#1e293b] group-hover:text-[var(--color-brand-primary)]'
+                    }`}>
+                      {loc.name}
+                    </h4>
+                    <p className="text-[10px] sm:text-xs font-bold text-[var(--color-brand-secondary)] mb-2 sm:mb-3 uppercase tracking-wider">
+                      {loc.type}
+                    </p>
+                  </div>
+                  {loc.comingSoon && (
+                    <span className="gradient-yellow-orange text-white text-[10px] sm:text-xs font-bold px-2 sm:px-3 py-1 sm:py-1.5 rounded-lg whitespace-nowrap shrink-0">
+                      {t.locationSearch.comingSoon}
+                    </span>
+                  )}
+                </div>
+
+                <div className="space-y-1.5 sm:space-y-2 mb-4 sm:mb-5">
+                  <div className="flex items-start gap-2 sm:gap-3 text-[#64748b] text-xs sm:text-sm">
+                    <MapPin className="w-3.5 h-3.5 sm:w-4 sm:h-4 mt-0.5 shrink-0 text-[var(--color-brand-primary)]" />
+                    <p>{loc.address}</p>
+                  </div>
+                  <div className="flex items-center gap-2 sm:gap-3 text-[#64748b] text-xs sm:text-sm">
+                    <Phone className="w-3.5 h-3.5 sm:w-4 sm:h-4 shrink-0 text-[var(--color-brand-primary)]" />
+                    <a href={`tel:${loc.phone.replace(/[^0-9]/g, '')}`} className="hover:text-[var(--color-brand-primary)] transition-colors">
+                      {loc.phone}
+                    </a>
+                  </div>
+                  {loc.hours && (
+                    <div className="flex items-center gap-2 sm:gap-3 text-[#64748b] text-xs sm:text-sm">
+                      <Clock className="w-3.5 h-3.5 sm:w-4 sm:h-4 shrink-0 text-[var(--color-brand-primary)]" />
+                      <p>{loc.hours}</p>
+                    </div>
+                  )}
+                </div>
+
+                {!loc.comingSoon && (
+                  <div className="flex gap-2 sm:gap-3">
+                    <a
+                      href={`https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(loc.address)}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      onClick={(e) => e.stopPropagation()}
+                      className="flex-1 bg-gray-50 hover:bg-[var(--color-brand-light)] text-[var(--color-brand-primary)] py-2 sm:py-2.5 rounded-lg sm:rounded-xl text-xs sm:text-sm font-semibold transition-colors flex items-center justify-center gap-1.5 sm:gap-2 border border-gray-100 hover:border-[var(--color-brand-light)]"
+                    >
+                      <Navigation className="w-3.5 h-3.5 sm:w-4 sm:h-4" /> {t.locationSearch.directions}
+                    </a>
+                    <button className="flex-1 gradient-blue hover:shadow-lg text-white py-2 sm:py-2.5 rounded-lg sm:rounded-xl text-xs sm:text-sm font-semibold transition-all">
+                      {t.locationSearch.bookVisit}
+                    </button>
+                  </div>
+                )}
+              </motion.div>
+            );
+          })}
         </div>
       </div>
     </section>

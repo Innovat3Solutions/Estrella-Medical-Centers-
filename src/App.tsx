@@ -3,28 +3,52 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import Header from './components/Header';
-import Hero from './components/Hero';
-import Specialties from './components/Specialties';
-import LocationSearch from './components/LocationSearch';
-import WhyChooseUs from './components/WhyChooseUs';
-import Testimonials from './components/Testimonials';
-import Partners from './components/Partners';
-import Footer from './components/Footer';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { LanguageProvider } from './i18n';
+import Home from './pages/Home';
+import DoctorsPage from './pages/DoctorsPage';
+import AboutPage from './pages/AboutPage';
+import MedicalPlanPage from './pages/MedicalPlanPage';
+import PrimaryCarePage from './pages/services/PrimaryCarePage';
+import CardiologyPage from './pages/services/CardiologyPage';
+import DentalPage from './pages/services/DentalPage';
+import PharmacyPage from './pages/services/PharmacyPage';
+import SeniorCarePage from './pages/services/SeniorCarePage';
+import DiagnosticsPage from './pages/services/DiagnosticsPage';
+import EndocrinologyPage from './pages/services/EndocrinologyPage';
+import NeurologyPage from './pages/services/NeurologyPage';
+import PodiatryPage from './pages/services/PodiatryPage';
+import OptometryPage from './pages/services/OptometryPage';
+import WellnessPage from './pages/services/WellnessPage';
+import SocialWorkPage from './pages/services/SocialWorkPage';
+import NutritionPage from './pages/services/NutritionPage';
+import TransportationPage from './pages/services/TransportationPage';
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-white font-sans text-[#1e293b]">
-      <Header />
-      <main>
-        <Hero />
-        <Specialties />
-        <LocationSearch />
-        <WhyChooseUs />
-        <Testimonials />
-        <Partners />
-      </main>
-      <Footer />
-    </div>
+    <LanguageProvider>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/doctors" element={<DoctorsPage />} />
+          <Route path="/services/primary-care" element={<PrimaryCarePage />} />
+          <Route path="/services/cardiology" element={<CardiologyPage />} />
+          <Route path="/services/dental" element={<DentalPage />} />
+          <Route path="/services/pharmacy" element={<PharmacyPage />} />
+          <Route path="/services/senior-care" element={<SeniorCarePage />} />
+          <Route path="/services/diagnostics" element={<DiagnosticsPage />} />
+          <Route path="/services/endocrinology" element={<EndocrinologyPage />} />
+          <Route path="/services/neurology" element={<NeurologyPage />} />
+          <Route path="/services/podiatry" element={<PodiatryPage />} />
+          <Route path="/services/optometry" element={<OptometryPage />} />
+          <Route path="/services/wellness" element={<WellnessPage />} />
+          <Route path="/services/social-work" element={<SocialWorkPage />} />
+          <Route path="/services/nutrition" element={<NutritionPage />} />
+          <Route path="/services/transportation" element={<TransportationPage />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/medical-plan" element={<MedicalPlanPage />} />
+        </Routes>
+      </Router>
+    </LanguageProvider>
   );
 }
