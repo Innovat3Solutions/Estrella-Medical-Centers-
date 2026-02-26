@@ -193,7 +193,7 @@ export default function DoctorsPage() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 0.06 }}
           transition={{ duration: 1.5 }}
-          src="/Assets/45.png"
+          src="/assets/45.png"
           alt=""
           className="hidden sm:block absolute -right-20 top-0 w-[500px] h-[500px] object-contain pointer-events-none"
         />
@@ -201,7 +201,7 @@ export default function DoctorsPage() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 0.04 }}
           transition={{ duration: 1.5, delay: 0.3 }}
-          src="/Assets/45.png"
+          src="/assets/45.png"
           alt=""
           className="hidden sm:block absolute -left-32 bottom-0 w-[450px] h-[450px] object-contain pointer-events-none rotate-12"
         />
@@ -379,7 +379,7 @@ export default function DoctorsPage() {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 0.03 }}
           viewport={{ once: true }}
-          src="/Assets/45.png"
+          src="/assets/45.png"
           alt=""
           className="hidden sm:block absolute -right-40 top-20 w-[500px] h-[500px] object-contain pointer-events-none"
         />
@@ -570,7 +570,7 @@ export default function DoctorsPage() {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 0.04 }}
           viewport={{ once: true }}
-          src="/Assets/45.png"
+          src="/assets/45.png"
           alt=""
           className="hidden sm:block absolute -left-20 top-1/2 -translate-y-1/2 w-[400px] h-[400px] object-contain pointer-events-none"
         />

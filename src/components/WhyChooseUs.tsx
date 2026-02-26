@@ -34,7 +34,7 @@ export default function WhyChooseUs() {
           whileInView={{ opacity: 0.05 }}
           viewport={{ once: true }}
           transition={{ duration: 1.5 }}
-          src="/Assets/45.png"
+          src="/assets/45.png"
           alt=""
           className="absolute -top-20 -left-20 w-[450px] h-[450px] object-contain rotate-12 pointer-events-none"
         />
@@ -43,7 +43,7 @@ export default function WhyChooseUs() {
           whileInView={{ opacity: 0.04 }}
           viewport={{ once: true }}
           transition={{ duration: 1.5, delay: 0.3 }}
-          src="/Assets/45.png"
+          src="/assets/45.png"
           alt=""
           className="absolute -bottom-32 -right-20 w-[500px] h-[500px] object-contain -rotate-6 pointer-events-none"
         />
@@ -88,7 +88,7 @@ export default function WhyChooseUs() {
         >
           {/* Card 1: Tall - 30+ Years */}
           <motion.div variants={itemVariants} className="col-span-1 md:col-span-1 lg:col-span-2 md:row-span-2 rounded-2xl sm:rounded-3xl overflow-hidden relative group flex flex-col shadow-lg gradient-blue min-h-[280px] md:min-h-0">
-            <img src="/Assets/45.png" className="absolute -bottom-10 -right-10 w-40 sm:w-56 h-40 sm:h-56 opacity-10 object-contain group-hover:scale-110 transition-transform duration-700" alt="" />
+            <img src="/assets/45.png" className="absolute -bottom-10 -right-10 w-40 sm:w-56 h-40 sm:h-56 opacity-10 object-contain group-hover:scale-110 transition-transform duration-700" alt="" />
             <div className="p-5 sm:p-6 md:p-8 lg:p-10 relative z-10 flex-1">
               <div className="bg-white/20 w-11 h-11 sm:w-14 sm:h-14 rounded-xl sm:rounded-2xl flex items-center justify-center mb-4 sm:mb-6 backdrop-blur-sm">
                 <ShieldCheck className="w-5 h-5 sm:w-7 sm:h-7 text-white" />
@@ -106,7 +106,7 @@ export default function WhyChooseUs() {
 
           {/* Card 2: Wide - 24hr Guarantee */}
           <motion.div variants={itemVariants} className="col-span-1 md:col-span-2 lg:col-span-3 md:row-span-1 rounded-2xl sm:rounded-3xl overflow-hidden relative group flex shadow-lg gradient-yellow-orange min-h-[200px] md:min-h-0">
-            <img src="/Assets/45.png" className="absolute -top-20 right-10 w-48 sm:w-64 h-48 sm:h-64 opacity-10 object-contain group-hover:rotate-12 transition-transform duration-700" alt="" />
+            <img src="/assets/45.png" className="absolute -top-20 right-10 w-48 sm:w-64 h-48 sm:h-64 opacity-10 object-contain group-hover:rotate-12 transition-transform duration-700" alt="" />
             <div className="p-5 sm:p-6 md:p-8 lg:p-10 relative z-10 w-full lg:w-1/2 flex flex-col justify-center">
               <div className="bg-white/20 w-10 h-10 sm:w-12 sm:h-12 rounded-xl sm:rounded-2xl flex items-center justify-center mb-3 sm:mb-4 backdrop-blur-sm">
                 <Clock className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
@@ -124,7 +124,7 @@ export default function WhyChooseUs() {
 
           {/* Card 3: Small - Home Visits */}
           <motion.div variants={itemVariants} className="col-span-1 md:col-span-1 lg:col-span-1 md:row-span-1 bg-white border border-gray-100 rounded-2xl sm:rounded-3xl overflow-hidden relative group flex flex-col shadow-lg">
-            <img src="/Assets/45.png" className="absolute -bottom-10 -right-10 w-28 sm:w-36 h-28 sm:h-36 opacity-5 object-contain" alt="" />
+            <img src="/assets/45.png" className="absolute -bottom-10 -right-10 w-28 sm:w-36 h-28 sm:h-36 opacity-5 object-contain" alt="" />
             <div className="p-5 sm:p-6 lg:p-8 relative z-10 flex-1">
               <div className="bg-[var(--color-brand-light)] w-10 h-10 sm:w-12 sm:h-12 rounded-lg sm:rounded-xl flex items-center justify-center mb-2 sm:mb-3">
                 <Home className="w-5 h-5 sm:w-6 sm:h-6 text-[var(--color-brand-primary)]" />
@@ -138,7 +138,7 @@ export default function WhyChooseUs() {
 
           {/* Card 4: Small - Bilingual Care */}
           <motion.div variants={itemVariants} className="col-span-1 md:col-span-1 lg:col-span-2 md:row-span-1 bg-white border border-gray-100 rounded-2xl sm:rounded-3xl overflow-hidden relative group flex flex-col shadow-lg">
-            <img src="/Assets/45.png" className="absolute -bottom-10 -right-10 w-28 sm:w-36 h-28 sm:h-36 opacity-5 object-contain" alt="" />
+            <img src="/assets/45.png" className="absolute -bottom-10 -right-10 w-28 sm:w-36 h-28 sm:h-36 opacity-5 object-contain" alt="" />
             <div className="p-5 sm:p-6 lg:p-8 relative z-10 flex-1">
               <div className="bg-red-50 w-10 h-10 sm:w-12 sm:h-12 rounded-lg sm:rounded-xl flex items-center justify-center mb-2 sm:mb-3">
                 <SmilePlus className="w-5 h-5 sm:w-6 sm:h-6 text-[var(--color-brand-secondary)]" />
@@ -152,7 +152,7 @@ export default function WhyChooseUs() {
 
           {/* Card 5: Wide - Integrated Services */}
           <motion.div variants={itemVariants} className="col-span-1 md:col-span-2 lg:col-span-5 md:row-span-1 rounded-2xl sm:rounded-3xl overflow-hidden relative group flex shadow-lg gradient-blue min-h-[200px] md:min-h-0">
-            <img src="/Assets/45.png" className="absolute bottom-0 right-1/3 w-32 sm:w-40 h-32 sm:h-40 opacity-10 object-contain group-hover:-translate-y-4 transition-transform duration-700" alt="" />
+            <img src="/assets/45.png" className="absolute bottom-0 right-1/3 w-32 sm:w-40 h-32 sm:h-40 opacity-10 object-contain group-hover:-translate-y-4 transition-transform duration-700" alt="" />
             <div className="p-5 sm:p-6 md:p-8 lg:p-10 relative z-10 w-full lg:w-2/5 flex flex-col justify-center">
               <div className="bg-white/20 w-10 h-10 sm:w-12 sm:h-12 rounded-xl sm:rounded-2xl flex items-center justify-center mb-3 sm:mb-4 backdrop-blur-sm">
                 <Pill className="w-5 h-5 sm:w-6 sm:h-6 text-white" />

@@ -63,12 +63,12 @@ export default function MedicalPlanPage() {
             <div className="gradient-blue p-6 sm:p-8 md:p-12 text-center relative overflow-hidden">
               {/* Star emboss background */}
               <img
-                src="/Assets/45.png"
+                src="/assets/45.png"
                 alt=""
                 className="absolute -right-20 -top-20 w-[300px] h-[300px] object-contain opacity-10 pointer-events-none"
               />
               <img
-                src="/Assets/45.png"
+                src="/assets/45.png"
                 alt=""
                 className="absolute -left-20 -bottom-20 w-[250px] h-[250px] object-contain opacity-10 pointer-events-none rotate-45"
               />

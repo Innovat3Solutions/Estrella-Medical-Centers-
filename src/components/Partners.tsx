@@ -32,7 +32,7 @@ export default function Partners() {
         whileInView={{ opacity: 0.04 }}
         viewport={{ once: true }}
         transition={{ duration: 1.5 }}
-        src="/Assets/45.png"
+        src="/assets/45.png"
         alt=""
         className="absolute -left-20 top-1/2 -translate-y-1/2 w-[500px] h-[500px] object-contain pointer-events-none"
       />
@@ -41,7 +41,7 @@ export default function Partners() {
         whileInView={{ opacity: 0.03 }}
         viewport={{ once: true }}
         transition={{ duration: 1.5, delay: 0.3 }}
-        src="/Assets/45.png"
+        src="/assets/45.png"
         alt=""
         className="absolute -right-32 top-10 w-[400px] h-[400px] object-contain pointer-events-none rotate-12"
       />

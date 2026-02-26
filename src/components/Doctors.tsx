@@ -14,7 +14,7 @@ export default function Doctors() {
         whileInView={{ opacity: 0.04 }}
         viewport={{ once: true }}
         transition={{ duration: 1.5 }}
-        src="/Assets/45.png"
+        src="/assets/45.png"
         alt=""
         className="absolute -right-20 top-0 w-[500px] h-[500px] object-contain pointer-events-none"
       />
@@ -23,7 +23,7 @@ export default function Doctors() {
         whileInView={{ opacity: 0.03 }}
         viewport={{ once: true }}
         transition={{ duration: 1.5, delay: 0.3 }}
-        src="/Assets/45.png"
+        src="/assets/45.png"
         alt=""
         className="absolute -left-32 bottom-20 w-[400px] h-[400px] object-contain pointer-events-none rotate-45"
       />

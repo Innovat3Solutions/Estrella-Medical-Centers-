@@ -105,12 +105,12 @@ export default function PharmacyPage() {
         {/* Background Pattern */}
         <div className="absolute inset-0 gradient-blue opacity-95" />
         <img
-          src="/Assets/45.png"
+          src="/assets/45.png"
           alt=""
           className="absolute -right-20 -top-20 w-[500px] h-[500px] object-contain opacity-10 pointer-events-none"
         />
         <img
-          src="/Assets/45.png"
+          src="/assets/45.png"
           alt=""
           className="absolute -left-32 bottom-0 w-[400px] h-[400px] object-contain opacity-5 pointer-events-none rotate-45"
         />
@@ -298,7 +298,7 @@ export default function PharmacyPage() {
             className="gradient-blue rounded-xl sm:rounded-2xl lg:rounded-3xl p-4 sm:p-6 lg:p-10 shadow-xl relative overflow-hidden"
           >
             <img
-              src="/Assets/45.png"
+              src="/assets/45.png"
               alt=""
               className="absolute -right-16 -bottom-16 w-48 sm:w-64 h-48 sm:h-64 object-contain opacity-10 pointer-events-none"
             />
@@ -452,12 +452,12 @@ export default function PharmacyPage() {
           className="max-w-5xl mx-auto gradient-blue rounded-xl sm:rounded-2xl lg:rounded-3xl p-6 sm:p-8 md:p-10 lg:p-16 text-center relative overflow-hidden"
         >
           <img
-            src="/Assets/45.png"
+            src="/assets/45.png"
             alt=""
             className="absolute -right-20 -top-20 w-48 sm:w-64 md:w-80 h-48 sm:h-64 md:h-80 object-contain opacity-10 pointer-events-none"
           />
           <img
-            src="/Assets/45.png"
+            src="/assets/45.png"
             alt=""
             className="absolute -left-20 -bottom-20 w-40 sm:w-52 md:w-64 h-40 sm:h-52 md:h-64 object-contain opacity-10 pointer-events-none rotate-45"
           />

@@ -67,7 +67,7 @@ export default function FAQ() {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 0.04 }}
         viewport={{ once: true }}
-        src="/Assets/45.png"
+        src="/assets/45.png"
         alt=""
         className="absolute -right-20 top-20 w-[450px] h-[450px] object-contain pointer-events-none rotate-12"
       />
@@ -75,7 +75,7 @@ export default function FAQ() {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 0.03 }}
         viewport={{ once: true }}
-        src="/Assets/45.png"
+        src="/assets/45.png"
         alt=""
         className="absolute -left-32 bottom-20 w-[400px] h-[400px] object-contain pointer-events-none -rotate-6"
       />

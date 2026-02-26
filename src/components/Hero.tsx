@@ -17,7 +17,7 @@ export default function Hero() {
           initial={{ opacity: 0, rotate: -10 }}
           animate={{ opacity: 0.06, rotate: 0 }}
           transition={{ duration: 1.5, ease: "easeOut" }}
-          src="/Assets/45.png"
+          src="/assets/45.png"
           alt=""
           className="absolute top-[5%] -right-10 w-[450px] h-[450px] object-contain"
         />
@@ -25,7 +25,7 @@ export default function Hero() {
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 0.04, scale: 1 }}
           transition={{ duration: 2, ease: "easeOut", delay: 0.5 }}
-          src="/Assets/45.png"
+          src="/assets/45.png"
           alt=""
           className="absolute bottom-10 -left-32 w-[550px] h-[550px] object-contain -rotate-12"
         />

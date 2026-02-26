@@ -77,7 +77,7 @@ export default function LocationSearch() {
         whileInView={{ opacity: 0.03 }}
         viewport={{ once: true }}
         transition={{ duration: 1.5 }}
-        src="/Assets/45.png"
+        src="/assets/45.png"
         alt=""
         className="absolute -left-32 top-20 w-[400px] h-[400px] object-contain pointer-events-none -rotate-12"
       />

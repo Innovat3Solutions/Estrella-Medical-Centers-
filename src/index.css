@@ -94,7 +94,7 @@
 .star-emboss::before {
   content: '';
   position: absolute;
-  background-image: url('/Assets/45.png');
+  background-image: url('/assets/45.png');
   background-repeat: no-repeat;
   background-size: contain;
   opacity: 0.03;

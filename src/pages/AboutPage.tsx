@@ -129,7 +129,7 @@ export default function AboutPage() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 0.05 }}
             transition={{ duration: 1.5 }}
-            src="/Assets/45.png"
+            src="/assets/45.png"
             alt=""
             className="absolute top-0 -right-20 w-[500px] h-[500px] object-contain pointer-events-none hidden sm:block"
           />
@@ -137,7 +137,7 @@ export default function AboutPage() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 0.03 }}
             transition={{ duration: 1.5, delay: 0.3 }}
-            src="/Assets/45.png"
+            src="/assets/45.png"
             alt=""
             className="absolute bottom-0 -left-32 w-[400px] h-[400px] object-contain pointer-events-none -rotate-12 hidden sm:block"
           />
@@ -212,7 +212,7 @@ export default function AboutPage() {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 0.03 }}
             viewport={{ once: true }}
-            src="/Assets/45.png"
+            src="/assets/45.png"
             alt=""
             className="absolute -right-20 top-20 w-[400px] h-[400px] object-contain pointer-events-none hidden sm:block"
           />
@@ -367,7 +367,7 @@ export default function AboutPage() {
                 </div>
                 <div className="lg:w-1/2">
                   <div className="gradient-blue rounded-xl sm:rounded-2xl md:rounded-3xl p-6 sm:p-8 md:p-10 text-white relative overflow-hidden">
-                    <img src="/Assets/45.png" className="absolute -bottom-10 -right-10 w-48 h-48 opacity-10 object-contain hidden sm:block" alt="" />
+                    <img src="/assets/45.png" className="absolute -bottom-10 -right-10 w-48 h-48 opacity-10 object-contain hidden sm:block" alt="" />
                     <div className="relative z-10">
                       <ShieldCheck className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 text-[var(--color-brand-accent)] mb-4 sm:mb-6" />
                       <h3 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4">{isSpanish ? 'Nuestra Vision' : 'Our Vision'}</h3>
@@ -390,7 +390,7 @@ export default function AboutPage() {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 0.03 }}
             viewport={{ once: true }}
-            src="/Assets/45.png"
+            src="/assets/45.png"
             alt=""
             className="absolute -left-20 top-1/2 -translate-y-1/2 w-[500px] h-[500px] object-contain pointer-events-none hidden sm:block"
           />
@@ -454,7 +454,7 @@ export default function AboutPage() {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 0.05 }}
             viewport={{ once: true }}
-            src="/Assets/45.png"
+            src="/assets/45.png"
             alt=""
             className="absolute -right-20 top-1/2 -translate-y-1/2 w-[400px] h-[400px] object-contain pointer-events-none rotate-12 hidden sm:block"
           />
@@ -509,7 +509,7 @@ export default function AboutPage() {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 0.03 }}
             viewport={{ once: true }}
-            src="/Assets/45.png"
+            src="/assets/45.png"
             alt=""
             className="absolute -left-20 top-1/2 -translate-y-1/2 w-[400px] h-[400px] object-contain pointer-events-none hidden sm:block"
           />

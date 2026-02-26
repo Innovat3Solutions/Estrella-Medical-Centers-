@@ -105,12 +105,12 @@ export default function PrimaryCarePage() {
         {/* Background Pattern */}
         <div className="absolute inset-0 gradient-blue opacity-95" />
         <img
-          src="/Assets/45.png"
+          src="/assets/45.png"
           alt=""
           className="absolute -right-20 -top-20 w-[500px] h-[500px] object-contain opacity-10 pointer-events-none"
         />
         <img
-          src="/Assets/45.png"
+          src="/assets/45.png"
           alt=""
           className="absolute -left-32 bottom-0 w-[400px] h-[400px] object-contain opacity-5 pointer-events-none rotate-45"
         />
@@ -298,7 +298,7 @@ export default function PrimaryCarePage() {
             className="gradient-blue rounded-2xl sm:rounded-3xl p-6 sm:p-8 lg:p-10 shadow-xl relative overflow-hidden"
           >
             <img
-              src="/Assets/45.png"
+              src="/assets/45.png"
               alt=""
               className="absolute -right-16 -bottom-16 w-48 sm:w-64 h-48 sm:h-64 object-contain opacity-10 pointer-events-none"
             />
@@ -452,12 +452,12 @@ export default function PrimaryCarePage() {
           className="max-w-5xl mx-auto gradient-blue rounded-2xl sm:rounded-3xl p-6 sm:p-10 lg:p-16 text-center relative overflow-hidden"
         >
           <img
-            src="/Assets/45.png"
+            src="/assets/45.png"
             alt=""
             className="absolute -right-20 -top-20 w-48 sm:w-80 h-48 sm:h-80 object-contain opacity-10 pointer-events-none"
           />
           <img
-            src="/Assets/45.png"
+            src="/assets/45.png"
             alt=""
             className="absolute -left-20 -bottom-20 w-40 sm:w-64 h-40 sm:h-64 object-contain opacity-10 pointer-events-none rotate-45"
           />

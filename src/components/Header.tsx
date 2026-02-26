@@ -121,20 +121,30 @@ export default function Header() {
             </div>
           </div>
         </>
-      ) : (
+      ) : item.external ? (
         <a
           href={item.href}
           onClick={(item as any).isLocations ? scrollToLocations : undefined}
-          target={item.external ? '_blank' : undefined}
-          rel={item.external ? 'noopener noreferrer' : undefined}
-          className={`flex items-center text-sm font-semibold transition-all py-2.5 px-4 rounded-full ${
-            item.highlight
+          target="_blank"
+          rel="noopener noreferrer"
+          className={`flex items-center text-sm font-semibold transition-all py-2.5 px-4 rounded-full ${item.highlight
               ? 'gradient-yellow-orange text-white hover:shadow-lg shadow-md'
               : 'text-[#1e293b] hover:text-[var(--color-brand-primary)]'
-          }`}
+            }`}
         >
           {item.name}
         </a>
+      ) : (
+        <Link
+          to={item.href}
+          onClick={(item as any).isLocations ? scrollToLocations : undefined}
+          className={`flex items-center text-sm font-semibold transition-all py-2.5 px-4 rounded-full ${item.highlight
+              ? 'gradient-yellow-orange text-white hover:shadow-lg shadow-md'
+              : 'text-[#1e293b] hover:text-[var(--color-brand-primary)]'
+            }`}
+        >
+          {item.name}
+        </Link>
       )}
     </div>
   );
@@ -283,21 +293,19 @@ export default function Header() {
             <div className="flex rounded-lg overflow-hidden border border-gray-200">
               <button
                 onClick={() => setLanguage('en')}
-                className={`flex-1 py-2.5 text-sm font-medium transition-colors ${
-                  language === 'en'
+                className={`flex-1 py-2.5 text-sm font-medium transition-colors ${language === 'en'
                     ? 'bg-[var(--color-brand-primary)] text-white'
                     : 'bg-white text-gray-700'
-                }`}
+                  }`}
               >
                 🇺🇸 English
               </button>
               <button
                 onClick={() => setLanguage('es')}
-                className={`flex-1 py-2.5 text-sm font-medium transition-colors ${
-                  language === 'es'
+                className={`flex-1 py-2.5 text-sm font-medium transition-colors ${language === 'es'
                     ? 'bg-[var(--color-brand-primary)] text-white'
                     : 'bg-white text-gray-700'
-                }`}
+                  }`}
               >
                 🇪🇸 Español
               </button>

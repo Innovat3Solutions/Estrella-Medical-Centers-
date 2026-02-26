@@ -93,7 +93,7 @@ export default function Testimonials() {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 0.05 }}
         viewport={{ once: true }}
-        src="/Assets/45.png"
+        src="/assets/45.png"
         alt=""
         className="absolute bottom-[-20%] left-[-10%] w-[600px] h-[600px] object-contain pointer-events-none"
       />
@@ -101,7 +101,7 @@ export default function Testimonials() {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 0.04 }}
         viewport={{ once: true }}
-        src="/Assets/45.png"
+        src="/assets/45.png"
         alt=""
         className="absolute top-10 -right-20 w-[400px] h-[400px] object-contain pointer-events-none rotate-12"
       />

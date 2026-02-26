@@ -170,7 +170,7 @@ export default function Specialties() {
         whileInView={{ opacity: 0.03 }}
         viewport={{ once: true }}
         transition={{ duration: 1.5 }}
-        src="/Assets/45.png"
+        src="/assets/45.png"
         alt=""
         className="absolute top-0 -right-20 w-[500px] h-[500px] object-contain pointer-events-none"
       />
@@ -179,7 +179,7 @@ export default function Specialties() {
         whileInView={{ opacity: 0.02 }}
         viewport={{ once: true }}
         transition={{ duration: 1.5, delay: 0.5 }}
-        src="/Assets/45.png"
+        src="/assets/45.png"
         alt=""
         className="absolute bottom-0 -left-32 w-[400px] h-[400px] object-contain pointer-events-none -rotate-12"
       />

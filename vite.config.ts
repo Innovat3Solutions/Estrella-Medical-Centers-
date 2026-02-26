@@ -20,5 +20,7 @@ export default defineConfig(({mode}) => {
       // Do not modifyâfile watching is disabled to prevent flickering during agent edits.
       hmr: process.env.DISABLE_HMR !== 'true',
     },
+    // Enable SPA fallback for client-side routing
+    appType: 'spa',
   };
 });

@@ -57,7 +57,7 @@ export default function NewPatientInfo() {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 0.03 }}
         viewport={{ once: true }}
-        src="/Assets/45.png"
+        src="/assets/45.png"
         alt=""
         className="absolute -right-20 top-20 w-[400px] h-[400px] object-contain pointer-events-none"
       />
@@ -173,7 +173,7 @@ export default function NewPatientInfo() {
           viewport={{ once: true }}
           className="gradient-blue rounded-2xl sm:rounded-3xl p-5 sm:p-8 md:p-10 relative overflow-hidden"
         >
-          <img src="/Assets/45.png" className="absolute -bottom-10 -right-10 w-32 sm:w-40 h-32 sm:h-40 opacity-10 object-contain" alt="" />
+          <img src="/assets/45.png" className="absolute -bottom-10 -right-10 w-32 sm:w-40 h-32 sm:h-40 opacity-10 object-contain" alt="" />
           <div className="relative z-10 flex flex-col md:flex-row items-center justify-between gap-4 sm:gap-6">
             <div className="text-white text-center md:text-left">
               <div className="flex items-center gap-2 sm:gap-3 justify-center md:justify-start mb-2">

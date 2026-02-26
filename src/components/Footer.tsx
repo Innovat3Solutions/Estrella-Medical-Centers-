@@ -14,7 +14,7 @@ export default function Footer() {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 0.05 }}
         viewport={{ once: true }}
-        src="/Assets/45.png"
+        src="/assets/45.png"
         alt=""
         className="absolute bottom-0 right-0 w-[700px] h-[700px] object-contain pointer-events-none mix-blend-overlay"
       />
@@ -22,7 +22,7 @@ export default function Footer() {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 0.03 }}
         viewport={{ once: true }}
-        src="/Assets/45.png"
+        src="/assets/45.png"
         alt=""
         className="absolute top-20 -left-20 w-[400px] h-[400px] object-contain pointer-events-none rotate-12"
       />
