@@ -99,7 +99,7 @@ export default function WhyChooseUs() {
               </p>
             </div>
             <div className="relative h-32 sm:h-2/5 w-full mt-auto overflow-hidden">
-              <img src="/assets/images/premium/caregiver-delivering-nutritious-meal.png" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt="Caregiver" />
+              <img src="/assets/images/premium/caregiver-delivering-nutritious-meal.webp" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt="Caregiver" />
               <div className="absolute inset-0 bg-gradient-to-t from-[var(--color-brand-primary)] to-transparent opacity-80 mix-blend-multiply"></div>
             </div>
           </motion.div>
@@ -117,34 +117,34 @@ export default function WhyChooseUs() {
               </p>
             </div>
             <div className="relative hidden lg:block w-1/2 h-full overflow-hidden clip-diagonal-left">
-              <img src="/assets/images/premium/specialists.jpg" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt="Specialists" />
+              <img src="/assets/images/premium/specialists.webp" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt="Specialists" />
               <div className="absolute inset-0 bg-gradient-to-r from-[var(--color-brand-secondary)] via-transparent to-transparent opacity-90 mix-blend-multiply"></div>
             </div>
           </motion.div>
 
           {/* Card 3: Small - Home Visits */}
-          <motion.div variants={itemVariants} className="col-span-1 md:col-span-1 lg:col-span-1 md:row-span-1 bg-white border border-gray-100 rounded-2xl sm:rounded-3xl overflow-hidden relative group flex flex-col shadow-lg">
+          <motion.div variants={itemVariants} className="col-span-1 md:col-span-1 lg:col-span-1 md:row-span-1 bg-white border border-gray-100 rounded-2xl sm:rounded-3xl overflow-hidden relative group flex flex-col shadow-lg min-h-[180px] md:min-h-0">
             <img src="/assets/45.png" className="absolute -bottom-10 -right-10 w-28 sm:w-36 h-28 sm:h-36 opacity-5 object-contain" alt="" />
-            <div className="p-5 sm:p-6 lg:p-8 relative z-10 flex-1">
-              <div className="bg-[var(--color-brand-light)] w-10 h-10 sm:w-12 sm:h-12 rounded-lg sm:rounded-xl flex items-center justify-center mb-2 sm:mb-3">
-                <Home className="w-5 h-5 sm:w-6 sm:h-6 text-[var(--color-brand-primary)]" />
+            <div className="p-4 sm:p-5 lg:p-6 relative z-10 flex-1 flex flex-col">
+              <div className="bg-[var(--color-brand-light)] w-9 h-9 sm:w-11 sm:h-11 rounded-lg sm:rounded-xl flex items-center justify-center mb-2 sm:mb-3 shrink-0">
+                <Home className="w-4 h-4 sm:w-5 sm:h-5 text-[var(--color-brand-primary)]" />
               </div>
-              <h3 className="text-base sm:text-lg lg:text-xl font-bold text-[var(--color-brand-primary)] mb-1 sm:mb-2">{t.whyChooseUs.homeVisits.title}</h3>
-              <p className="text-[#64748b] text-xs sm:text-sm leading-relaxed">
+              <h3 className="text-sm sm:text-base lg:text-lg font-bold text-[var(--color-brand-primary)] mb-1 sm:mb-2 leading-tight">{t.whyChooseUs.homeVisits.title}</h3>
+              <p className="text-[#64748b] text-[11px] sm:text-xs lg:text-sm leading-relaxed line-clamp-4">
                 {t.whyChooseUs.homeVisits.desc}
               </p>
             </div>
           </motion.div>
 
           {/* Card 4: Small - Bilingual Care */}
-          <motion.div variants={itemVariants} className="col-span-1 md:col-span-1 lg:col-span-2 md:row-span-1 bg-white border border-gray-100 rounded-2xl sm:rounded-3xl overflow-hidden relative group flex flex-col shadow-lg">
+          <motion.div variants={itemVariants} className="col-span-1 md:col-span-1 lg:col-span-2 md:row-span-1 bg-white border border-gray-100 rounded-2xl sm:rounded-3xl overflow-hidden relative group flex flex-col shadow-lg min-h-[180px] md:min-h-0">
             <img src="/assets/45.png" className="absolute -bottom-10 -right-10 w-28 sm:w-36 h-28 sm:h-36 opacity-5 object-contain" alt="" />
-            <div className="p-5 sm:p-6 lg:p-8 relative z-10 flex-1">
-              <div className="bg-red-50 w-10 h-10 sm:w-12 sm:h-12 rounded-lg sm:rounded-xl flex items-center justify-center mb-2 sm:mb-3">
-                <SmilePlus className="w-5 h-5 sm:w-6 sm:h-6 text-[var(--color-brand-secondary)]" />
+            <div className="p-4 sm:p-5 lg:p-6 relative z-10 flex-1 flex flex-col">
+              <div className="bg-red-50 w-9 h-9 sm:w-11 sm:h-11 rounded-lg sm:rounded-xl flex items-center justify-center mb-2 sm:mb-3 shrink-0">
+                <SmilePlus className="w-4 h-4 sm:w-5 sm:h-5 text-[var(--color-brand-secondary)]" />
               </div>
-              <h3 className="text-base sm:text-lg lg:text-xl font-bold text-[var(--color-brand-secondary)] mb-1 sm:mb-2">{t.whyChooseUs.bilingual.title}</h3>
-              <p className="text-[#64748b] text-xs sm:text-sm leading-relaxed">
+              <h3 className="text-sm sm:text-base lg:text-lg font-bold text-[var(--color-brand-secondary)] mb-1 sm:mb-2 leading-tight">{t.whyChooseUs.bilingual.title}</h3>
+              <p className="text-[#64748b] text-[11px] sm:text-xs lg:text-sm leading-relaxed line-clamp-4">
                 {t.whyChooseUs.bilingual.desc}
               </p>
             </div>
@@ -163,7 +163,7 @@ export default function WhyChooseUs() {
               </p>
             </div>
             <div className="relative hidden lg:block w-3/5 h-full overflow-hidden">
-              <img src="/assets/images/premium/service-pharmacy.jpeg" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt="Pharmacy" />
+              <img src="/assets/images/premium/service-pharmacy.webp" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt="Pharmacy" />
               <div className="absolute inset-0 bg-gradient-to-l from-transparent to-[var(--color-brand-primary)] opacity-90 mix-blend-multiply"></div>
             </div>
           </motion.div>
