@@ -189,7 +189,8 @@ export default function SocialWorkPage() {
               <div className="relative">
                 <div className="rounded-xl sm:rounded-2xl lg:rounded-3xl overflow-hidden shadow-2xl border-4 border-white/20">
                   <img
-                    src="/assets/images/premium/social-worker-sitting-beside-elder.png"
+                    src="/assets/images/premium/social-worker-sitting-beside-elder.webp"
+                    loading="lazy"
                     alt={isSpanish ? 'Servicios de trabajo social' : 'Social work services'}
                     className="w-full h-[300px] sm:h-[400px] lg:h-[500px] object-cover"
                   />

@@ -68,14 +68,14 @@ export default function Hero() {
           </p>
 
           {/* Key Benefits */}
-          <div className="flex flex-wrap gap-2 sm:gap-4 justify-center lg:justify-start">
-            <div className="flex items-center gap-2 bg-white/80 backdrop-blur-sm px-3 sm:px-4 py-2 rounded-full shadow-sm">
-              <Calendar className="w-4 h-4 text-[var(--color-brand-secondary)]" />
-              <span className="text-xs sm:text-sm font-medium text-[#1e293b]">{t.hero.appointmentGuarantee}</span>
+          <div className="flex flex-wrap gap-2 sm:gap-3 justify-center lg:justify-start">
+            <div className="flex items-center gap-1.5 sm:gap-2 bg-white/80 backdrop-blur-sm px-2.5 sm:px-4 py-1.5 sm:py-2 rounded-full shadow-sm max-w-[180px] sm:max-w-none">
+              <Calendar className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-[var(--color-brand-secondary)] shrink-0" />
+              <span className="text-[10px] sm:text-sm font-medium text-[#1e293b] leading-tight">{t.hero.appointmentGuarantee}</span>
             </div>
-            <div className="flex items-center gap-2 bg-white/80 backdrop-blur-sm px-3 sm:px-4 py-2 rounded-full shadow-sm">
-              <Heart className="w-4 h-4 text-[var(--color-brand-secondary)]" />
-              <span className="text-xs sm:text-sm font-medium text-[#1e293b]">{t.hero.homeHealth}</span>
+            <div className="flex items-center gap-1.5 sm:gap-2 bg-white/80 backdrop-blur-sm px-2.5 sm:px-4 py-1.5 sm:py-2 rounded-full shadow-sm max-w-[160px] sm:max-w-none">
+              <Heart className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-[var(--color-brand-secondary)] shrink-0" />
+              <span className="text-[10px] sm:text-sm font-medium text-[#1e293b] leading-tight">{t.hero.homeHealth}</span>
             </div>
           </div>
 
@@ -111,8 +111,9 @@ export default function Hero() {
         >
           <div className="relative w-full max-w-xl mx-auto translate-y-8 sm:translate-y-16 lg:translate-y-24">
             <img
-              src="/assets/images/hero-team.png"
+              src="/assets/images/hero-team.webp"
               alt="Estrella Medical Center Staff"
+              loading="lazy"
               className="w-full h-auto object-contain transition-transform duration-700 hover:scale-[1.02] drop-shadow-[0_20px_40px_rgba(0,0,0,0.25)]"
             />
           </div>

@@ -13,7 +13,7 @@ const featuredDoctors = [
     role: 'Doctor of Medicine',
     roleEs: 'Doctora en Medicina',
     initials: 'MD',
-    image: '/assets/images/doctors/Aurelia_doctor.png',
+    image: '/assets/images/doctors/Aurelia_doctor.webp',
     specialty: 'Primary Care',
     specialtyEs: 'Atencion Primaria',
     bio: 'With over 15 years of experience in primary care, Dr. Leblanc is dedicated to building lasting relationships with her patients and providing comprehensive health management.',
@@ -29,7 +29,7 @@ const featuredDoctors = [
     role: 'Doctor of Medicine',
     roleEs: 'Doctor en Medicina',
     initials: 'MD',
-    image: '/assets/images/doctors/Ciro_doctor.png',
+    image: '/assets/images/doctors/Ciro_doctor.webp',
     specialty: 'General Practice',
     specialtyEs: 'Medicina General',
     bio: 'Dr. Ramirez brings warmth and expertise to every patient encounter. His patient-centered approach focuses on preventive care and chronic disease management.',
@@ -45,7 +45,7 @@ const featuredDoctors = [
     role: 'Doctor of Medicine',
     roleEs: 'Doctora en Medicina',
     initials: 'MD',
-    image: '/assets/images/doctors/Yanelis_doctor.png',
+    image: '/assets/images/doctors/Yanelis_doctor.webp',
     specialty: 'Internal Medicine',
     specialtyEs: 'Medicina Interna',
     bio: 'Specializing in internal medicine, Dr. Martin excels in diagnosing and treating complex medical conditions while ensuring each patient feels heard and cared for.',
@@ -64,7 +64,7 @@ const allProviders = [
     role: 'Advanced Registered Nurse Practitioner',
     roleEs: 'Enfermera Practicante Registrada Avanzada',
     initials: 'ARNP',
-    image: '/assets/images/doctors/Carmen_doctor.png',
+    image: '/assets/images/doctors/Carmen_doctor.webp',
     specialty: 'Family Nursing',
     specialtyEs: 'Enfermeria Familiar',
     bio: 'Carmen provides compassionate care with a focus on family health and wellness across all ages.',
@@ -80,7 +80,7 @@ const allProviders = [
     role: 'Advanced Registered Nurse Practitioner',
     roleEs: 'Enfermero Practicante Registrado Avanzado',
     initials: 'ARNP',
-    image: '/assets/images/doctors/Hugo_doctor.png',
+    image: '/assets/images/doctors/Hugo_doctor.webp',
     specialty: 'Family Nursing',
     specialtyEs: 'Enfermeria Familiar',
     bio: 'Hugo specializes in comprehensive family care, bringing years of experience in geriatric and adult medicine.',
@@ -96,7 +96,7 @@ const allProviders = [
     role: 'Doctor of Optometry',
     roleEs: 'Doctora en Optometria',
     initials: 'OD',
-    image: '/assets/images/doctors/Yamaris_doctor.png',
+    image: '/assets/images/doctors/Yamaris_doctor.webp',
     specialty: 'Optometry',
     specialtyEs: 'Optometria',
     bio: 'Dr. Martin provides comprehensive eye care including vision exams, disease detection, and treatment plans.',
@@ -303,6 +303,7 @@ export default function DoctorsPage() {
                   <img
                     src={doc.image}
                     alt={doc.name}
+                    loading="lazy"
                     className="w-full h-full object-cover object-top transform group-hover:scale-105 transition-transform duration-700"
                   />
 
@@ -439,6 +440,7 @@ export default function DoctorsPage() {
                         <img
                           src={provider.image}
                           alt={provider.name}
+                          loading="lazy"
                           className="w-full h-full object-cover object-top"
                         />
                       </>

@@ -189,7 +189,8 @@ export default function SeniorCarePage() {
               <div className="relative">
                 <div className="rounded-2xl sm:rounded-3xl overflow-hidden shadow-2xl border-4 border-white/20">
                   <img
-                    src="/assets/images/services/senior-care.png"
+                    src="/assets/images/services/senior-care.webp"
+                    loading="lazy"
                     alt={isSpanish ? 'Cuidado de adultos mayores' : 'Senior care consultation'}
                     className="w-full h-[300px] sm:h-[400px] lg:h-[500px] object-cover"
                   />

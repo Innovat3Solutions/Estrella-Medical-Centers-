@@ -195,8 +195,9 @@ export default function AboutPage() {
                   className="relative"
                 >
                   <img
-                    src="/assets/images/about/estrella-building.png"
+                    src="/assets/images/about/estrella-building.webp"
                     alt="Estrella Medical Centers"
+                    loading="lazy"
                     className="rounded-xl sm:rounded-2xl md:rounded-3xl shadow-2xl object-cover h-[300px] sm:h-[350px] md:h-[400px] lg:h-[450px] w-full"
                   />
                   <div className="absolute inset-0 rounded-xl sm:rounded-2xl md:rounded-3xl bg-gradient-to-t from-[var(--color-brand-primary)]/40 to-transparent"></div>
@@ -247,13 +248,15 @@ export default function AboutPage() {
               >
                 <div className="grid grid-cols-2 gap-3 sm:gap-4">
                   <img
-                    src="/assets/images/about/estrella-group.png"
+                    src="/assets/images/about/estrella-group.webp"
                     alt="Medical team"
+                    loading="lazy"
                     className="rounded-xl sm:rounded-2xl shadow-lg w-full h-[180px] sm:h-[220px] md:h-[280px] object-cover object-top col-span-2"
                   />
                   <img
-                    src="/assets/images/about/candid-moment.png"
+                    src="/assets/images/about/candid-moment.webp"
                     alt="Doctor with patient"
+                    loading="lazy"
                     className="rounded-xl sm:rounded-2xl shadow-lg w-full h-[140px] sm:h-[170px] md:h-[200px] object-cover"
                   />
                   <div className="gradient-blue rounded-xl sm:rounded-2xl p-4 sm:p-6 flex flex-col justify-center items-center text-white">

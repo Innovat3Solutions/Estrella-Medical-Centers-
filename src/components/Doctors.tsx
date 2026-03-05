@@ -75,8 +75,9 @@ export default function Doctors() {
               <div className="absolute inset-0 bg-gradient-to-r from-[var(--color-brand-primary)]/20 to-transparent z-10" />
 
               <img
-                src="/assets/images/doctors/Estrella_group.png"
+                src="/assets/images/doctors/Estrella_group.webp"
                 alt="Estrella Medical Center Team"
+                loading="lazy"
                 className="absolute inset-0 w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
               />
 

@@ -189,7 +189,8 @@ export default function CardiologyPage() {
               <div className="relative">
                 <div className="rounded-2xl sm:rounded-3xl overflow-hidden shadow-xl sm:shadow-2xl border-2 sm:border-4 border-white/20">
                   <img
-                    src="/assets/images/services/cardiology-exam.png"
+                    src="/assets/images/services/cardiology-exam.webp"
+                    loading="lazy"
                     alt={isSpanish ? 'Examen de cardiologia' : 'Cardiology examination'}
                     className="w-full h-[280px] sm:h-[350px] md:h-[400px] lg:h-[500px] object-cover"
                   />

@@ -189,7 +189,8 @@ export default function EndocrinologyPage() {
               <div className="relative">
                 <div className="rounded-xl sm:rounded-2xl lg:rounded-3xl overflow-hidden shadow-2xl border-4 border-white/20">
                   <img
-                    src="/assets/images/services/endocrinology.png"
+                    src="/assets/images/services/endocrinology.webp"
+                    loading="lazy"
                     alt={isSpanish ? 'Consulta de endocrinologia' : 'Endocrinology consultation'}
                     className="w-full h-[300px] sm:h-[350px] md:h-[400px] lg:h-[500px] object-cover"
                   />

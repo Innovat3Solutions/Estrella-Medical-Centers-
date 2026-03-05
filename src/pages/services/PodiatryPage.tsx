@@ -189,7 +189,8 @@ export default function PodiatryPage() {
               <div className="relative">
                 <div className="rounded-xl sm:rounded-2xl lg:rounded-3xl overflow-hidden shadow-2xl border-4 border-white/20">
                   <img
-                    src="/assets/images/services/podiatry.png"
+                    src="/assets/images/services/podiatry.webp"
+                    loading="lazy"
                     alt={isSpanish ? 'Especialista en podologia examinando un pie' : 'Podiatry specialist examining a foot'}
                     className="w-full h-[300px] sm:h-[400px] lg:h-[500px] object-cover"
                   />

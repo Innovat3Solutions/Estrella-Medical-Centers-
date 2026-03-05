@@ -189,7 +189,8 @@ export default function NutritionPage() {
               <div className="relative">
                 <div className="rounded-xl sm:rounded-2xl lg:rounded-3xl overflow-hidden shadow-2xl border-4 border-white/20">
                   <img
-                    src="/assets/images/premium/caregiver-delivering-nutritious-meal.png"
+                    src="/assets/images/premium/caregiver-delivering-nutritious-meal.webp"
+                    loading="lazy"
                     alt={isSpanish ? 'Servicios de nutrición' : 'Nutrition services'}
                     className="w-full h-[300px] sm:h-[350px] md:h-[400px] lg:h-[500px] object-cover"
                   />

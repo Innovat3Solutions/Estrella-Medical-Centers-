@@ -190,7 +190,8 @@ export default function OptometryPage() {
               <div className="relative">
                 <div className="rounded-xl sm:rounded-2xl lg:rounded-3xl overflow-hidden shadow-2xl border-4 border-white/20">
                   <img
-                    src="/assets/images/services/optometry-exam.png"
+                    src="/assets/images/services/optometry-exam.webp"
+                    loading="lazy"
                     alt={isSpanish ? 'Examen de optometria' : 'Optometry examination'}
                     className="w-full h-[300px] sm:h-[350px] lg:h-[500px] object-cover"
                   />
