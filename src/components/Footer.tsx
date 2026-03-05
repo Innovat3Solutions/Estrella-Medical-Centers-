@@ -1,4 +1,4 @@
-import { PhoneCall, CalendarDays, MapPin, Mail, Clock, Shield, Heart } from 'lucide-react';
+import { PhoneCall, CalendarDays, MapPin, Mail, Clock, Shield, Heart, Star, ExternalLink, Users } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { useLanguage } from '../i18n';
@@ -115,7 +115,7 @@ export default function Footer() {
           </div>
 
           {/* Links Columns */}
-          <div className="lg:col-span-8 grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8">
+          <div className="lg:col-span-8 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 sm:gap-8">
             <div>
               <h4 className="font-bold mb-4 sm:mb-6 text-xs sm:text-sm uppercase tracking-wider">{isSpanish ? 'Servicios' : 'Services'}</h4>
               <ul className="space-y-2 sm:space-y-4 text-xs sm:text-sm text-white/70">
@@ -135,6 +135,41 @@ export default function Footer() {
                 <li><Link to="/services/podiatry" className="hover:text-white transition-colors">{isSpanish ? 'Podologia' : 'Podiatry'}</Link></li>
                 <li><Link to="/services/optometry" className="hover:text-white transition-colors">{isSpanish ? 'Optometria' : 'Optometry'}</Link></li>
                 <li><Link to="/services/wellness" className="hover:text-white transition-colors">{isSpanish ? 'Bienestar' : 'Wellness'}</Link></li>
+              </ul>
+            </div>
+            <div>
+              <h4 className="font-bold mb-4 sm:mb-6 text-xs sm:text-sm uppercase tracking-wider flex items-center gap-1.5">
+                <Star className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-[var(--color-brand-accent)]" />
+                {isSpanish ? 'Plan Medico' : 'Medical Plan'}
+              </h4>
+              <ul className="space-y-2 sm:space-y-4 text-xs sm:text-sm text-white/70">
+                <li>
+                  <Link to="/medical-plan" className="hover:text-white transition-colors flex items-center gap-1.5">
+                    {isSpanish ? 'Plan Medico Estrella' : 'Estrella Medical Plan'}
+                  </Link>
+                </li>
+                <li>
+                  <a
+                    href="https://affiliate.estrellamedicalplans.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-white transition-colors flex items-center gap-1.5"
+                  >
+                    <Users className="w-3 h-3" />
+                    {isSpanish ? 'Ser Afiliado' : 'Become an Affiliate'}
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://app.estrellamedicalplans.com/login"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-white transition-colors flex items-center gap-1.5"
+                  >
+                    <ExternalLink className="w-3 h-3" />
+                    {isSpanish ? 'Portal de Afiliados' : 'Affiliate Portal'}
+                  </a>
+                </li>
               </ul>
             </div>
             <div>
