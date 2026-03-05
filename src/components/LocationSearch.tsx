@@ -66,8 +66,8 @@ export default function LocationSearch() {
 
   const currentLocation = locations[selectedLocation];
 
-  // Map showing South Florida area
-  const mapSrc = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d229089.04006758948!2d-80.4137786!3d25.9017472!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b0a20ec8c111%3A0xff96f271ddad4f65!2sMiami%2C%20FL!5e0!3m2!1sen!2sus!4v1715456384724!5m2!1sen!2sus";
+  // Dynamic map based on selected location (no API key required)
+  const mapSrc = `https://maps.google.com/maps?q=${currentLocation.mapQuery}&t=&z=15&ie=UTF8&iwloc=&output=embed`;
 
   return (
     <section id="locations" className="py-12 sm:py-16 md:py-20 lg:py-24 px-4 sm:px-6 md:px-12 lg:px-24 max-w-7xl mx-auto flex flex-col lg:flex-row gap-8 sm:gap-12 lg:gap-16 items-center relative overflow-hidden scroll-mt-20">
