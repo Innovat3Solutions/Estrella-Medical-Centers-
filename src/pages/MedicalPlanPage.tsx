@@ -128,7 +128,7 @@ export default function MedicalPlanPage() {
               {/* CTA Button */}
               <div className="text-center">
                 <a
-                  href="https://estrella-plan.lovable.app"
+                  href="https://link.fastpaydirect.com/payment-link/69a9c0eb9402281a3be99d5e"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 sm:gap-3 gradient-yellow-orange text-white px-6 sm:px-8 md:px-10 py-3 sm:py-4 md:py-5 rounded-full font-bold text-sm sm:text-base md:text-lg hover:shadow-xl transition-all shadow-lg"

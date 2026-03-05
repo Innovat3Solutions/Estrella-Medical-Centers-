@@ -9,6 +9,7 @@ import Home from './pages/Home';
 import DoctorsPage from './pages/DoctorsPage';
 import AboutPage from './pages/AboutPage';
 import MedicalPlanPage from './pages/MedicalPlanPage';
+import ThankYouPage from './pages/ThankYouPage';
 import PrimaryCarePage from './pages/services/PrimaryCarePage';
 import CardiologyPage from './pages/services/CardiologyPage';
 import DentalPage from './pages/services/DentalPage';
@@ -47,6 +48,7 @@ export default function App() {
           <Route path="/services/transportation" element={<TransportationPage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/medical-plan" element={<MedicalPlanPage />} />
+          <Route path="/thank-you" element={<ThankYouPage />} />
         </Routes>
       </Router>
     </LanguageProvider>
