@@ -48,7 +48,7 @@ export default function NewPatientInfo() {
   ];
 
   const insuranceLogos = [
-    'Humana', 'UnitedHealthcare', 'Aetna', 'Cigna', 'Devoted Health', 'Simply Healthcare', 'AvMed'
+    'Humana', 'Simply Healthcare', 'Devoted Health', 'Cigna'
   ];
 
   return (

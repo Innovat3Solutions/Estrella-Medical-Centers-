@@ -5,7 +5,7 @@ import { useLanguage } from '../i18n';
 
 const locations = [
   {
-    name: 'Estrella Medical Center - Flagler',
+    name: 'Estrella Medical Centers - Flagler',
     type: 'Miami-Dade Center',
     address: '4795 W Flagler St, Miami, FL 33134',
     phone: '(305) 982-8810',
@@ -14,7 +14,7 @@ const locations = [
     mapQuery: '4795+W+Flagler+St,+Miami,+FL+33134',
   },
   {
-    name: 'Estrella Medical Center - Kendall',
+    name: 'Estrella Medical Centers - Kendall',
     type: 'Miami-Dade Center',
     address: '13980 SW 47th St, Miami, FL 33175',
     phone: '(305) 982-8810',
@@ -23,7 +23,7 @@ const locations = [
     mapQuery: '13980+SW+47th+St,+Miami,+FL+33175',
   },
   {
-    name: 'Estrella Medical Center - Plantation',
+    name: 'Estrella Medical Centers - Plantation',
     type: 'Broward Center',
     address: '1860 N Pine Island Rd, Plantation, FL 33322',
     phone: '(305) 982-8810',
@@ -32,7 +32,7 @@ const locations = [
     mapQuery: '1860+N+Pine+Island+Rd,+Plantation,+FL+33322',
   },
   {
-    name: 'Estrella Medical Center - Pembroke Pines',
+    name: 'Estrella Medical Centers - Pembroke Pines',
     type: 'Broward Center',
     address: '1806 N Flamingo Rd Suite 280, Pembroke Pines, FL 33028',
     phone: '(305) 982-8810',
@@ -41,7 +41,7 @@ const locations = [
     mapQuery: '1806+N+Flamingo+Rd,+Pembroke+Pines,+FL+33028',
   },
   {
-    name: 'Estrella Medical Center - Doral',
+    name: 'Estrella Medical Centers - Doral',
     type: 'Miami-Dade Center',
     address: '10305 NW 41st St Suite 227, Doral, FL 33178',
     phone: '(305) 982-8810',
@@ -50,12 +50,12 @@ const locations = [
     mapQuery: '10305+NW+41st+St,+Doral,+FL+33178',
   },
   {
-    name: 'Estrella Medical Center - Hialeah',
+    name: 'Estrella Medical Centers - Hialeah',
     type: 'Miami-Dade Center',
     address: '4305 E 8th Ave, Hialeah, FL 33013',
     phone: '(305) 982-8810',
-    hours: '',
-    comingSoon: true,
+    hours: 'Mon-Sat: 8am-4:30pm',
+    comingSoon: false,
     mapQuery: '4305+E+8th+Ave,+Hialeah,+FL+33013',
   },
 ];

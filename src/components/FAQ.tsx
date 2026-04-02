@@ -14,8 +14,8 @@ const faqs = [
   {
     question: 'Do you offer same-day appointments?',
     questionEs: 'Ofrecen citas el mismo dia?',
-    answer: 'Yes! We guarantee primary care appointments within 24 hours and specialist appointments within one week. For urgent matters, same-day appointments are often available. Call us at (305) 982-8810 to schedule.',
-    answerEs: 'Si! Garantizamos citas de atencion primaria dentro de 24 horas y citas con especialistas dentro de una semana. Para asuntos urgentes, las citas el mismo dia estan frecuentemente disponibles. Llamenos al (305) 982-8810 para programar.'
+    answer: 'Yes! We guarantee primary care appointments within 24 hours and specialist appointments within 72 hours. For urgent matters, same-day appointments are often available. Call us at (305) 982-8810 to schedule.',
+    answerEs: 'Si! Garantizamos citas de atencion primaria dentro de 24 horas y citas con especialistas dentro de 72 horas. Para asuntos urgentes, las citas el mismo dia estan frecuentemente disponibles. Llamenos al (305) 982-8810 para programar.'
   },
   {
     question: 'Do you provide transportation to appointments?',
@@ -50,8 +50,8 @@ const faqs = [
   {
     question: 'Do you offer nutritional services?',
     questionEs: 'Ofrecen servicios nutricionales?',
-    answer: 'Yes! We provide comprehensive nutritional counseling and even hot meal delivery services for eligible patients. Proper nutrition is essential for managing chronic conditions and overall wellness.',
-    answerEs: 'Si! Proporcionamos consejeria nutricional integral e incluso servicios de entrega de comidas calientes para pacientes elegibles. La nutricion adecuada es esencial para manejar condiciones cronicas y el bienestar general.'
+    answer: 'Yes! We provide comprehensive nutritional counseling for eligible patients. Proper nutrition is essential for managing chronic conditions and overall wellness.',
+    answerEs: 'Si! Proporcionamos consejeria nutricional integral para pacientes elegibles. La nutricion adecuada es esencial para manejar condiciones cronicas y el bienestar general.'
   }
 ];
 

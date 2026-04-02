@@ -76,7 +76,7 @@ export default function Doctors() {
 
               <img
                 src="/assets/images/doctors/Estrella_group.webp"
-                alt="Estrella Medical Center Team"
+                alt="Estrella Medical Centers Team"
                 loading="lazy"
                 className="absolute inset-0 w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
               />

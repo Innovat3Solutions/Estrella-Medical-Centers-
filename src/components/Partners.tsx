@@ -1,24 +1,17 @@
 import { motion } from 'framer-motion';
 import { useLanguage } from '../i18n';
 
-// Common Medicare Advantage and insurance plans in South Florida
 const insurancePlans = [
   { name: 'Humana', logo: '/assets/images/insurance/humana.png' },
-  { name: 'UnitedHealthcare', logo: '/assets/images/insurance/united-healthcare-logo.png' },
-  { name: 'Aetna', logo: '/assets/images/insurance/aetna.png' },
-  { name: 'Cigna', logo: '/assets/images/insurance/Cigna.png' },
-  { name: 'Blue Cross Blue Shield', logo: '/assets/images/insurance/blue-cross-blue-shield-health-insurance-logo.webp' },
-  { name: 'Devoted Health', logo: '/assets/images/insurance/DevotedHealth.png' },
   { name: 'Simply Healthcare', logo: '/assets/images/insurance/simply.png' },
-  { name: 'AvMed', logo: '/assets/images/insurance/avmed.png' },
-  { name: 'Wellcare', logo: '/assets/images/insurance/wellcare.png' },
-  { name: 'CarePlus', logo: '/assets/images/insurance/CarePlus-Health-Plans-Logo-1.png' },
-  { name: 'Freedom Health', logo: '/assets/images/insurance/freedom.gif' },
-  { name: 'Preferred Care Partners', logo: '/assets/images/insurance/preferred-care.png' },
-  { name: 'Molina Healthcare', logo: '/assets/images/insurance/molina.webp' },
-  { name: 'Bright Health', logo: '/assets/images/insurance/bright-health.webp' },
-  { name: 'Medica', logo: '/assets/images/insurance/Medica.webp' },
-  { name: 'Oscar Health', logo: '/assets/images/insurance/Oscar_Health_logo.svg' },
+  { name: 'Devoted Health', logo: '/assets/images/insurance/DevotedHealth.png' },
+  { name: 'Cigna', logo: '/assets/images/insurance/Cigna.png' },
+  { name: 'Insurance Partner', logo: '/assets/images/insurance/52.png' },
+  { name: 'Insurance Partner', logo: '/assets/images/insurance/53.png' },
+  { name: 'Insurance Partner', logo: '/assets/images/insurance/54.png' },
+  { name: 'Insurance Partner', logo: '/assets/images/insurance/55.png' },
+  { name: 'Insurance Partner', logo: '/assets/images/insurance/56.png' },
+  { name: 'Insurance Partner', logo: '/assets/images/insurance/57.png' },
 ];
 
 export default function Partners() {

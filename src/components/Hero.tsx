@@ -112,7 +112,7 @@ export default function Hero() {
           <div className="relative w-full max-w-xl mx-auto translate-y-8 sm:translate-y-16 lg:translate-y-24">
             <img
               src="/assets/images/hero-team.webp"
-              alt="Estrella Medical Center Staff"
+              alt="Estrella Medical Centers Staff"
               loading="lazy"
               className="w-full h-auto object-contain transition-transform duration-700 hover:scale-[1.02] drop-shadow-[0_20px_40px_rgba(0,0,0,0.25)]"
             />

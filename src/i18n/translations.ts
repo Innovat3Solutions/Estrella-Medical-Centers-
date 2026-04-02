@@ -47,7 +47,7 @@ export const translations = {
         prp: { title: 'PRP Treatment', desc: 'Pain & inflammation relief' },
         acupuncture: { title: 'Acupuncture', desc: 'Traditional healing therapy' },
         physicalTherapy: { title: 'Physical Therapy', desc: 'Rehabilitation & mobility care' },
-        nutrition: { title: 'Nutritional Services', desc: 'Diet counseling & meal delivery' },
+        nutrition: { title: 'Nutritional Services', desc: 'Diet counseling' },
         socialAssistance: { title: 'Social Assistance', desc: 'Community support services' },
         homeVisits: { title: 'Home Visits', desc: 'Physician care at your home' },
         cardiology: { title: 'Cardiology', desc: 'Heart health specialists' },
@@ -67,7 +67,7 @@ export const translations = {
       },
       guarantee: {
         title: '24-Hour Guarantee',
-        desc: 'Primary care appointments within 24 hours. Specialist appointments within one week.',
+        desc: 'Primary care appointments within 24 hours. Specialist appointments within 72 hours.',
       },
       homeVisits: {
         title: 'Health in Your Home',
@@ -79,7 +79,7 @@ export const translations = {
       },
       integrated: {
         title: 'Integrated Services',
-        desc: 'Diagnostics, pharmacy, nutrition with meal delivery, and 15+ specialties all under one roof.',
+        desc: 'Diagnostics, pharmacy, nutrition, and 15+ specialties all under one roof.',
       },
     },
     // Location Search
@@ -198,7 +198,7 @@ export const translations = {
         prp: { title: 'Tratamiento PRP', desc: 'Alivio del dolor e inflamacion' },
         acupuncture: { title: 'Acupuntura', desc: 'Terapia de sanacion tradicional' },
         physicalTherapy: { title: 'Terapia Fisica', desc: 'Rehabilitacion y cuidado de movilidad' },
-        nutrition: { title: 'Servicios Nutricionales', desc: 'Consejeria dietetica y entrega de comidas' },
+        nutrition: { title: 'Servicios Nutricionales', desc: 'Consejeria dietetica' },
         socialAssistance: { title: 'Asistencia Social', desc: 'Servicios de apoyo comunitario' },
         homeVisits: { title: 'Visitas a Domicilio', desc: 'Atencion medica en su hogar' },
         cardiology: { title: 'Cardiologia', desc: 'Especialistas en salud del corazon' },
@@ -218,7 +218,7 @@ export const translations = {
       },
       guarantee: {
         title: 'Garantia de 24 Horas',
-        desc: 'Citas de atencion primaria en 24 horas. Citas con especialistas en una semana.',
+        desc: 'Citas de atencion primaria en 24 horas. Citas con especialistas en 72 horas.',
       },
       homeVisits: {
         title: 'La Salud en su Hogar',
@@ -230,7 +230,7 @@ export const translations = {
       },
       integrated: {
         title: 'Servicios Integrados',
-        desc: 'Diagnosticos, farmacia, nutricion con entrega de comidas y mas de 15 especialidades bajo un solo techo.',
+        desc: 'Diagnosticos, farmacia, nutricion y mas de 15 especialidades bajo un solo techo.',
       },
     },
     // Location Search

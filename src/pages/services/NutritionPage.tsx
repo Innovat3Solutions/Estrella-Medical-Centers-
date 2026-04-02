@@ -32,13 +32,6 @@ export default function NutritionPage() {
       titleEs: 'Manejo de Enfermedades',
       descEn: 'Nutrition support for chronic conditions',
       descEs: 'Apoyo nutricional para condiciones crónicas'
-    },
-    {
-      icon: Award,
-      titleEn: 'Meal Delivery Available',
-      titleEs: 'Entrega de Comidas Disponible',
-      descEn: 'Healthy meals delivered to your home',
-      descEs: 'Comidas saludables entregadas a su hogar'
     }
   ];
 
@@ -47,7 +40,6 @@ export default function NutritionPage() {
     { en: 'Heart-Healthy Diet Planning', es: 'Planificación de Dietas Saludables para el Corazón' },
     { en: 'Weight Management Programs', es: 'Programas de Control de Peso' },
     { en: 'Renal Diet Support', es: 'Apoyo de Dieta Renal' },
-    { en: 'Meal Delivery Programs', es: 'Programas de Entrega de Comidas' },
     { en: 'Grocery Shopping Guidance', es: 'Orientación para Compras de Supermercado' },
     { en: 'Nutritional Assessments', es: 'Evaluaciones Nutricionales' },
     { en: 'Supplement Recommendations', es: 'Recomendaciones de Suplementos' },
@@ -63,12 +55,6 @@ export default function NutritionPage() {
       questionEs: '¿Cómo puede ayudar la consejería nutricional con mi diabetes?',
       answerEn: 'Proper nutrition is fundamental to diabetes management. Our nutritionists work with you to create meal plans that help control blood sugar levels, reduce medication dependency when possible, and prevent complications. We teach carbohydrate counting, portion control, and how to make sustainable dietary changes that fit your lifestyle and cultural preferences.',
       answerEs: 'La nutrición adecuada es fundamental para el manejo de la diabetes. Nuestros nutricionistas trabajan con usted para crear planes de comidas que ayuden a controlar los niveles de azúcar en sangre, reducir la dependencia de medicamentos cuando sea posible y prevenir complicaciones. Enseñamos el conteo de carbohidratos, control de porciones y cómo hacer cambios dietéticos sostenibles que se ajusten a su estilo de vida y preferencias culturales.'
-    },
-    {
-      questionEn: 'Do you offer meal delivery services?',
-      questionEs: '¿Ofrecen servicios de entrega de comidas?',
-      answerEn: 'Yes! We partner with meal delivery programs to provide nutritious, medically-appropriate meals directly to your home. This is especially helpful for seniors with mobility challenges or those recovering from illness. We can also connect you with programs like Meals on Wheels and other community food assistance resources.',
-      answerEs: 'Sí! Nos asociamos con programas de entrega de comidas para proporcionar comidas nutritivas y médicamente apropiadas directamente a su hogar. Esto es especialmente útil para adultos mayores con desafíos de movilidad o aquellos que se recuperan de una enfermedad. También podemos conectarlo con programas como Meals on Wheels y otros recursos de asistencia alimentaria comunitaria.'
     },
     {
       questionEn: 'What is a heart-healthy diet?',
